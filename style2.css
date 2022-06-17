@@ -1,0 +1,86 @@
+
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+    
+    
+     }
+li{list-style: none;
+   
+    
+}
+
+a{text-decoration: none;
+font-size: 45px;
+    font-weight: 400;
+
+color:antiquewhite;
+padding:12px;
+    background-color: rgb(235, 80, 32);}
+.container{
+      background-color: black;
+    max-width:870px;
+    margin: auto;
+    margin-top: 23px;
+  
+}
+.grid-container{
+     
+ 
+    display: grid;
+    
+    gap:12px;
+    
+   max-width: 650px;
+    height: 440px;
+   padding: 70px;
+    grid-auto-rows: 90px;
+    grid-template-areas: 
+  'red red red yel yel'
+  'grn grn bl1 bl1 bl1'
+  'grn grn bl2 bl2 bl2';
+    border-radius: 2px;
+ 
+}
+.one{
+  background-color: rgb(235, 80, 32);
+  grid-area: red;
+  grid-row: 1 /  3;
+    width:409px;
+    height: 188px;
+}
+
+.two {
+  background-color: rgb(255, 164, 2); 
+  grid-area: yel;
+  grid-row: 1 / span 2;
+    width: 220px;
+    height: 188px;
+}
+.three {
+  background-color: rgb(6, 170, 67); 
+  grid-area: grn;
+  grid-row: 3 / span 2;
+     width:310px;
+    height: 220px;
+}
+
+.four {
+  background-color: rgb(1, 174, 253);
+  grid-area: bl1;  
+  grid-row: 3 ;
+        width:320px;
+    height: 88px;
+
+}
+
+.five {
+  background-color: rgb(1, 174, 253);
+  grid-area: bl2;
+  grid-row: 4 ;
+    width:320px;
+    height: 120px;
+}
